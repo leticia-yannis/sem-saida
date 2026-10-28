@@ -1,0 +1,46 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px;
+  background: #111827;
+  color: #f9fafb;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.painel { width: min(100%, 680px); text-align: center; }
+h1 { margin: 4px 0 8px; color: #facc15; letter-spacing: 2px; }
+.subtitulo { margin: 0 0 16px; color: #d1d5db; }
+.placar {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 20px;
+  margin: 12px 0; padding: 12px; background: #1f2937; border-radius: 10px;
+}
+.placar strong { color: #facc15; }
+canvas {
+  display: block; width: min(100%, 600px); height: auto; margin: 0 auto;
+  border: 3px solid #64748b; border-radius: 8px; background: #050816;
+}
+.instrucoes { color: #d1d5db; line-height: 1.5; }
+#mensagem { min-height: 24px; color: #fde68a; font-weight: bold; }
+button {
+  border: 0; border-radius: 8px; padding: 10px 18px; cursor: pointer;
+  background: #facc15; color: #111827; font-weight: bold;
+}
+button:hover { background: #fde047; }
+@media (max-width: 480px) { body { padding: 10px; } .placar { gap: 8px 12px; font-size: 14px; } }
+
+/* Telas de início, vitória e derrota (sobre o canvas) */
+.area-jogo { position: relative; width: min(100%, 600px); margin: 0 auto; }
+.tela {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 14px; padding: 20px;
+  background: rgba(5, 8, 22, 0.88); border-radius: 8px;
+}
+.tela.oculta { display: none; }
+.tela h2 { margin: 0; color: #facc15; font-size: 2rem; letter-spacing: 2px; }
+.tela p { margin: 0; max-width: 420px; color: #e5e7eb; line-height: 1.6; white-space: pre-line; }
+
+/* Botões de baixo (reiniciar e som) */
+.botoes { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }

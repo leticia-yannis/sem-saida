@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sem Saída</title>
+  <link rel="stylesheet" href="jogoSemSaida.css">
+</head>
+<body>
+  <main class="painel">
+    <h1>Sem Saída</h1>
+    <p class="subtitulo">Colete o dinheiro, fuja da polícia e use as bombinhas!</p>
+    <section class="placar" aria-live="polite">
+      <span>Pontuação: <strong id="pontuacao">0</strong></span>
+      <span>Recorde: <strong id="recorde">0</strong></span>
+      <span>Fase: <strong id="fase">1</strong></span>
+      <span>Vidas: <strong id="vidas">3</strong></span>
+      <span>Bolsas: <strong id="bolsas">0</strong></span>
+    </section>
+  <div class="area-jogo">
+  <canvas id="jogo" width="600" height="600" aria-label="Jogo Sem Saída"></canvas>
+  <div id="tela" class="tela">
+    <h2 id="telaTitulo">Sem Saída</h2>
+    <p id="telaTexto">Você é o ladrão: colete todas as sacolas de dinheiro e fuja da polícia!
+Setas ou WASD para mover.
+Pegue 💣 para desnortear os policiais.</p>
+      <button id="telaBotao" type="button" autofocus>Jogar</button>
+    </div>
+  </div>
+  <p class="instrucoes">Movimente com as setas ou WASD. Pegue 💣 para desnortear os policiais por alguns segundos.</p>
+  <p id="mensagem" role="status">Clique em Jogar para começar.</p>
+<div class="botoes">
+  <button id="somBotao" type="button">🔊 Som: ligado</button>
+</div>
+</main>
+  <script src="jogoSemSaida.js"></script>
+</body>
+</html>
